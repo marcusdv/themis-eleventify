@@ -1,0 +1,236 @@
+/* Cards - Pillar, Project, Testimonial */
+
+/* Pillar cards */
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pillar-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    padding: 2rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.pillar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.pillar-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.pillar-card p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    margin-bottom: 16px;
+}
+
+.pillar-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--orange-050);
+    color: var(--orange);
+    margin-bottom: 18px;
+}
+
+.pillar-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.pillar-link {
+    font-weight: 700;
+    color: var(--orange-600);
+    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pillar-link .arrow {
+    transition: transform 0.15s;
+}
+
+.pillar-card:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Photo frames */
+
+.photo-frame {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    min-height: 260px;
+    box-shadow: var(--shadow-md);
+}
+
+.photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--ph-bg, linear-gradient(135deg, var(--navy), var(--orange)));
+}
+
+.photo-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), transparent 60%);
+}
+
+.photo-frame .ph-label {
+    position: relative;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.photo-frame .ph-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+}
+
+/* Project cards */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+@media (max-width: 920px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    transition:
+        box-shadow 0.2s,
+        transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.project-card .photo-frame {
+    border-radius: 0;
+    min-height: 180px;
+}
+
+.project-card .photo-frame::before {
+    display: none;
+}
+
+.project-card .body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.project-card .tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--orange-600);
+}
+
+.project-card h3 {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.project-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: 0;
+    flex: 1;
+}
+
+.blog-card .tag {
+    color: var(--orange-600);
+}
+
+/* Testimonial cards */
+
+.testi-card {
+    background: var(--navy-050);
+    border-radius: var(--radius-md);
+    padding: 32px;
+}
+
+.testi-card p {
+    font-size: 1.1rem;
+    color: var(--navy);
+    font-style: italic;
+}
+
+.testi-name {
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.testi-role {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

@@ -1,0 +1,135 @@
+---
+---
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contato | Instituto Themis Furigo</title>
+        <meta
+            name="description"
+            content="Fale com o Instituto Themis Furigo: endereço, telefone, e-mail e redes sociais."
+        />
+        <link rel="icon" href="assets/img/logo-light.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta property="og:title" content="Contato | Instituto Themis Furigo" />
+        <meta
+            property="og:description"
+            content="Fale com o Instituto Themis Furigo: endereço, telefone, e-mail e redes sociais."
+        />
+        <meta property="og:type" content="website" />
+    </head>
+    <body>        {% include "header.html" %}
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb"><a href="index.html">Início</a> / Contato</div>
+                <h1>Fale Conosco</h1>
+                <p>
+                    Dúvidas, parcerias, imprensa ou vontade de ajudar? Escolha o melhor canal para falar com o Instituto
+                    Themis Furigo.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="container grid-2">
+                <div>
+                    <h2>Envie uma mensagem</h2>
+                    <form class="form-grid" action="mailto:themisfurigo33@gmail.com" method="post" enctype="text/plain">
+                        <div class="field"><label>Nome</label><input type="text" name="nome" required /></div>
+                        <div class="field"><label>E-mail</label><input type="email" name="email" required /></div>
+                        <div class="field full">
+                            <label>Assunto</label>
+                            <select name="assunto">
+                                <option>Quero ser voluntário</option>
+                                <option>Quero ser parceiro/empresa</option>
+                                <option>Dúvida sobre doação</option>
+                                <option>Imprensa</option>
+                                <option>Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="field full">
+                            <label>Mensagem</label><textarea name="mensagem" required></textarea>
+                        </div>
+                        <div class="full"><button type="submit" class="btn btn-orange">Enviar Mensagem</button></div>
+                    </form>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 14px">
+                        <!-- ATUALIZAR: substituir pelo envio via formulário integrado (ex.: Formspree, backend próprio) no lugar do mailto:, para melhor experiência e antispam. -->
+                    </p>
+                </div>
+                <div>
+                    <div class="notice-box" style="margin-bottom: 20px">
+                        <strong> Endereço</strong>
+                        <p style="margin: 8px 0 0">
+                            Rua Senador Flaquer, sala 12 — Cond. Edifício Balderi<br />Centro, Santo André - SP, CEP
+                            09010-160
+                        </p>
+                    </div>
+                    <div class="notice-box" style="margin-bottom: 20px">
+                        <strong> Telefone / WhatsApp</strong>
+                        <p style="margin: 8px 0 0"><a href="tel:+5511967700712">(11) 96770-0712</a></p>
+                    </div>
+                    <div class="notice-box" style="margin-bottom: 20px">
+                        <strong> E-mail</strong>
+                        <p style="margin: 8px 0 0">
+                            <a href="mailto:themisfurigo33@gmail.com">themisfurigo33@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="notice-box">
+                        <strong> Redes sociais</strong>
+                        <div class="social-row" style="margin-top: 12px">
+                            <a
+                                href="https://www.instagram.com/institutotf/"
+                                target="_blank"
+                                rel="noopener"
+                                style="border-color: var(--border)"
+                                ><svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.2" cy="6.8" r="1" /></svg
+                            ></a>
+                            <a
+                                href="https://www.facebook.com/institutothemisfurigo/"
+                                target="_blank"
+                                rel="noopener"
+                                style="border-color: var(--border)"
+                                ><svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.8">
+                                    <path
+                                        d="M14 8.5h2.5V5H14c-2.2 0-4 1.8-4 4v2H8v3.5h2V21h3.5v-6.5H16l.5-3.5h-3V9c0-.5.5-1 1-1z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://www.youtube.com/channel/UC7i_6IJPcqcxha_-yZf_cvQ"
+                                target="_blank"
+                                rel="noopener"
+                                style="border-color: var(--border)"
+                                ><svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.8">
+                                    <rect x="3" y="6" width="18" height="12" rx="4" />
+                                    <path d="M11 10l4 2-4 2z" fill="var(--navy)" stroke="none" /></svg
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="container">
+                <div class="photo-frame" style="min-height: 280px; --ph-bg: linear-gradient(135deg, #123765, #0b2545)">
+                    <span class="ph-tag">Mapa</span>
+                    <div class="ph-label">
+                        <!-- ATUALIZAR: incorporar mapa real (Google Maps) com o endereço do Instituto -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "footer.html" %}
+        <script src="assets/js/main.js"></script>
+        <script>
+        </script>
+    </body>
+</html>

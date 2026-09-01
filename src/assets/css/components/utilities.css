@@ -1,0 +1,234 @@
+/* Utility classes */
+
+/* Stats and metrics */
+
+.stat-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.stat-row .num {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--navy);
+}
+
+.stat-row .lbl {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* Lists */
+
+.list-check {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.list-check li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.96rem;
+}
+
+.list-check svg {
+    width: 20px;
+    height: 20px;
+    color: var(--success);
+    flex: none;
+    margin-top: 2px;
+}
+
+/* Tables */
+
+.table-clean {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-clean th,
+.table-clean td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+}
+
+.table-clean th {
+    color: var(--navy);
+    font-family: var(--font-head);
+}
+
+/* Forms */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-grid .full {
+    grid-column: 1/-1;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.86rem;
+    margin-bottom: 6px;
+    color: var(--navy);
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    background: var(--white);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Donation options */
+
+.donate-option {
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.donate-option:hover,
+.donate-option.active {
+    border-color: var(--orange);
+    background: var(--orange-050);
+}
+
+.donate-option .amt {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--navy);
+}
+
+/* Tags and filters */
+
+.tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.tag-filter button {
+    border: 1px solid var(--border);
+    background: var(--white);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--navy);
+    transition: all 0.15s;
+}
+
+.tag-filter button.active,
+.tag-filter button:hover {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+    padding-left: 32px;
+    border-left: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--orange);
+    border: 3px solid var(--orange-050);
+}
+
+.timeline-item .yr {
+    font-family: var(--font-head);
+    font-weight: 800;
+    color: var(--orange-600);
+    font-size: 1.1rem;
+}
+
+/* Notice box */
+
+.notice-box {
+    background: var(--navy-050);
+    border: 1px solid #d7e3f0;
+    border-radius: 14px;
+    padding: 20px 24px;
+    font-size: 0.9rem;
+    color: var(--navy);
+}
+
+.notice-box strong {
+    color: var(--orange-600);
+}
+
+/* CTA band */
+
+.cta-band {
+    background: linear-gradient(120deg, var(--navy), var(--navy-600));
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.cta-band h2 {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.cta-band p {
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}

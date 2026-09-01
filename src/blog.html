@@ -1,0 +1,142 @@
+---
+---
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Blog e Notícias | Instituto Themis Furigo</title>
+        <meta
+            name="description"
+            content="Portal de notícias, histórias reais e conteúdo sobre saúde, mulheres, agricultura familiar, tecnologia, ESG e muito mais."
+        />
+        <link rel="icon" href="assets/img/logo-light.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta property="og:title" content="Blog e Notícias | Instituto Themis Furigo" />
+        <meta
+            property="og:description"
+            content="Portal de notícias, histórias reais e conteúdo sobre saúde, mulheres, agricultura familiar, tecnologia, ESG e muito mais."
+        />
+        <meta property="og:type" content="website" />
+    </head>
+    <body>        {% include "header.html" %}
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb"><a href="index.html">Início</a> / Blog</div>
+                <h1>Portal de Notícias</h1>
+                <p>
+                    Histórias reais, bastidores dos projetos e conteúdo útil sobre saúde, mulheres, agricultura
+                    familiar, tecnologia, ESG e muito mais.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="tag-filter">
+                    <button data-filter="todos" class="active">Todos</button>
+                    <button data-filter="noticias">Notícias</button> <button data-filter="mulheres">Mulheres</button>
+                    <button data-filter="criancas">Crianças</button>
+                    <button data-filter="agricultura">Agricultura</button>
+                    <button data-filter="moda">Moda Sustentável</button> <button data-filter="tecnologia">IA</button>
+                    <button data-filter="saude">Saúde</button> <button data-filter="esg">ESG</button>
+                    <button data-filter="empresas">Empresas</button>
+                    <button data-filter="voluntariado">Voluntariado</button>
+                    <button data-filter="editais">Editais</button>
+                    <button data-filter="transparencia">Transparência</button>
+                </div>
+                <div class="card-grid">
+                    <a href="blog-cop30.html" class="project-card blog-card" data-category="noticias">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #0b2545, #2e9e6d)">
+                            <span class="ph-tag"> ESG</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Notícias · COP30</span>
+                            <h3>O que a COP30 significa para as ONGs brasileiras</h3>
+                            <p>
+                                Financiamento climático, novas regras e oportunidades para organizações sociais como o
+                                Instituto Themis Furigo.
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        href="blog-realidade-virtual-educacao.html"
+                        class="project-card blog-card"
+                        data-category="tecnologia"
+                    >
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #123765, #7a4fdb)">
+                            <span class="ph-tag"> IA</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Tecnologia</span>
+                            <h3>O impacto da realidade virtual na educação profissional</h3>
+                            <p>
+                                Como óculos de RV estão sendo usados para capacitar jovens em nossos cursos de
+                                programação.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="blog-moda-sustentavel.html" class="project-card blog-card" data-category="moda">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #d94e1f, #0b2545)">
+                            <span class="ph-tag"> Moda Sustentável</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Mulheres</span>
+                            <h3>Moda sustentável gera renda para mulheres</h3>
+                            <p>Como o Curió Look Lab transforma retalhos e tempo ocioso em autonomia financeira.</p>
+                        </div>
+                    </a>
+                    <a href="blog-imposto-de-renda.html" class="project-card blog-card" data-category="editais">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #0b2545, #f2622e)">
+                            <span class="ph-tag"> Editais</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Doação · Imposto de Renda</span>
+                            <h3>Como doar parte do Imposto de Renda para projetos sociais</h3>
+                            <p>
+                                Passo a passo simples para destinar parte do seu IR devido a organizações da sociedade
+                                civil.
+                            </p>
+                        </div>
+                    </a>
+                    <div class="project-card blog-card" data-category="agricultura" style="opacity: 0.6">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #123765, #2e9e6d)">
+                            <span class="ph-tag"> Agricultura</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Em breve</span>
+                            <h3>Como a agricultura familiar transforma comunidades</h3>
+                            <p>Artigo em produção — publicaremos em breve neste espaço.</p>
+                        </div>
+                    </div>
+                    <div class="project-card blog-card" data-category="empresas" style="opacity: 0.6">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #0b2545, #7a4fdb)">
+                            <span class="ph-tag"> Empresas</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Em breve</span>
+                            <h3>O que é ESG e como empresas podem apoiar projetos sociais</h3>
+                            <p>Artigo em produção — publicaremos em breve neste espaço.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice-box" style="margin-top: 40px">
+                    <strong>Publicação semanal:</strong> este portal foi estruturado para receber novos artigos toda
+                    semana, o que fortalece o posicionamento do Instituto nas buscas do Google e atrai novos apoiadores.
+                    <!-- ATUALIZAR: no momento não há responsável definido para a produção de conteúdo/newsletter — item para planejamento da equipe. -->
+                    Sugestões de pauta: agricultura familiar, realidade virtual na educação, moda sustentável, doação de
+                    Imposto de Renda, empreendedorismo feminino, o que é uma OSC, ESG e apoio empresarial.
+                </div>
+            </div>
+        </section>
+        {% include "footer.html" %}
+        <script src="assets/js/main.js"></script>
+        <script>
+        </script>
+    </body>
+</html>

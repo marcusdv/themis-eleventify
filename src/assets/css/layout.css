@@ -1,0 +1,119 @@
+/* Layout base - container, section, grids */
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 88px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 56px 0;
+    }
+}
+
+/* Grid utilities */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 860px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-2.rev .col-media {
+    order: 2;
+}
+
+/* Eyebrow text */
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 14px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 2px;
+    display: inline-block;
+}
+
+/* Section heading */
+.section-head {
+    max-width: 680px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.section-head h2 {
+    font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+}
+
+.section-head p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.section-head.left {
+    margin: 0 0 40px;
+    text-align: left;
+}
+
+/* Background utilities */
+.bg-light {
+    background: var(--bg);
+}
+
+.bg-navy {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.bg-navy h2,
+.bg-navy h3 {
+    color: var(--white);
+}
+
+/* Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--orange-050);
+    color: var(--orange-600);
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 40px 0;
+}
+
+/* Anchor offset para sticky header */
+.anchor-offset {
+    scroll-margin-top: 100px;
+}

@@ -1,0 +1,512 @@
+---
+---
+
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            Instituto Themis Furigo | Transformando vidas através da educação, saúde, tecnologia e sustentabilidade
+        </title>
+        <meta
+            name="description"
+            content="ONG que atua em saúde, empreendedorismo feminino, agricultura familiar, moda sustentável e tecnologia/IA para gerar oportunidades reais de transformação social."
+        />
+        <link rel="icon" href="assets/img/logo-light.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta
+            property="og:title"
+            content="Instituto Themis Furigo | Transformando vidas através da educação, saúde, tecnologia e sustentabilidade"
+        />
+        <meta
+            property="og:description"
+            content="ONG que atua em saúde, empreendedorismo feminino, agricultura familiar, moda sustentável e tecnologia/IA para gerar oportunidades reais de transformação social."
+        />
+        <meta property="og:type" content="website" />
+    </head>
+    <body>
+        {% include "header.html" %}
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="eyebrow" style="color: #ffd9c7">Instituto Themis Furigo · desde 2018</div>
+                    <h1>Mudando vidas com educação, saúde, tecnologia e sustentabilidade.</h1>
+                    <p class="lead">
+                        Somos um movimento que conecta mulheres, crianças, jovens, agricultores familiares, empresas e
+                        tecnologia para construir oportunidades reais de transformação social.
+                    </p>
+                </div>
+                <div class="hero-logo">
+                    <img src="assets/img/logo-light.png" alt="Instituto Themis Furigo" />
+                </div>
+            </div>
+        </section>
+        <!-- IMPACTO -->
+        <!-- ATUALIZAR: os números abaixo precisam ser confirmados pela equipe do Instituto antes da publicação. O único valor com fonte verificada é o de mulheres capacitadas (meta do Potência Feminina = 6.000). -->
+        <section class="impact-strip">
+            <div class="container">
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="num" data-count="6000" data-suffix="+">0</div>
+                        <div class="lbl">Mulheres capacitadas</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="num" data-count="2500" data-suffix="+">0</div>
+                        <div class="lbl">Crianças e famílias atendidas</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="num" data-count="150" data-suffix="+">0</div>
+                        <div class="lbl">Agricultores familiares apoiados</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="num" data-count="10000" data-suffix="+">0</div>
+                        <div class="lbl">Peças sustentáveis produzidas</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="num" data-count="300" data-suffix="+">0</div>
+                        <div class="lbl">Jovens capacitados em IA e RV</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="num" data-count="10" data-suffix="+">0</div>
+                        <div class="lbl">Empresas e institutos parceiros</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ÁREAS DE ATUAÇÃO -->
+        <section id="pilares">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Áreas de atuação</div>
+                    <h2>O que nós fazemos</h2>
+                    <p>
+                        Unimos saúde, empreendedorismo feminino, agricultura familiar e tecnologia em seis frentes de
+                        atuação que se conectam para transformar comunidades inteiras.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <a href="projeto-saude-para-todos.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/saude.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Saúde</span>
+                        </div>
+                        <div class="body">
+                            <h3>Saúde para Todos</h3>
+                            <p>
+                                Consultas, exames e pequenos procedimentos 100% gratuitos para quem não tem acesso à
+                                saúde de qualidade.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="projeto-potencia-feminina.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/mulheres.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Mulheres</span>
+                        </div>
+                        <div class="body">
+                            <h3>Potência Feminina</h3>
+                            <p>
+                                Capacitação gratuita em empregabilidade, empreendedorismo e programação, em parceria com
+                                Google e RME.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="projeto-florescer.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/criancas.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Crianças</span>
+                        </div>
+                        <div class="body">
+                            <h3>Florescer</h3>
+                            <p>
+                                Atendimento terapêutico e psicológico que promove o bem-estar emocional de crianças e
+                                famílias.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="projeto-agrofloresta-viva.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/agricultura.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Agricultura</span>
+                        </div>
+                        <div class="body">
+                            <h3>Agrofloresta Viva</h3>
+                            <p>
+                                Agrofloresta regenerativa e segurança alimentar para pequenos produtores e comunidades
+                                vulneráveis.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="projeto-curio-look-lab.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/costura.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Moda</span>
+                        </div>
+                        <div class="body">
+                            <h3>Curió Look Lab</h3>
+                            <p>
+                                Costura sustentável e economia circular, gerando renda para mulheres através de moda com
+                                propósito.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="projeto-tecnologia-ia.html" class="project-card">
+                        <div
+                            class="photo-frame"
+                            style="
+                                background-image: url(&quot;./assets/pilares-images/ai.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        >
+                            <span class="ph-tag">Tecnologia</span>
+                        </div>
+                        <div class="body">
+                            <h3>Educação do Futuro</h3>
+                            <p>
+                                Capacitação profissional de jovens em programação, Inteligência Artificial e Realidade
+                                Virtual.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CARROSSEL DE DESTAQUES -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Para quem fazemos</div>
+                    <h2>Para quem fazemos: principalmente mulheres, crianças, jovens, famílias e agricultores</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px">
+                    <div class="project-card" style="background: var(--white); border: 1px solid var(--border)">
+                        <div
+                            class="photo-frame"
+                            style="
+                                min-height: 280px;
+                                background-image: url(&quot;assets/img/quem-ajudamos/mulheres.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        ></div>
+                        <div class="body">
+                            <h3>Mulheres</h3>
+                            <p>Capacitação e empoderamento econômico para milhares de mulheres.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" style="background: var(--white); border: 1px solid var(--border)">
+                        <div
+                            class="photo-frame"
+                            style="
+                                min-height: 280px;
+                                background-image: url(&quot;assets/img/quem-ajudamos/crianca-familia.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        ></div>
+                        <div class="body">
+                            <h3>Crianças e Famílias</h3>
+                            <p>Atendimento integral para o bem-estar emocional e físico.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" style="background: var(--white); border: 1px solid var(--border)">
+                        <div
+                            class="photo-frame"
+                            style="
+                                min-height: 280px;
+                                background-image: url(&quot;assets/img/quem-ajudamos/jovens.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        ></div>
+                        <div class="body">
+                            <h3>Jovens</h3>
+                            <p>Capacitação em tecnologia, programação e Inteligência Artificial.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" style="background: var(--white); border: 1px solid var(--border)">
+                        <div
+                            class="photo-frame"
+                            style="
+                                min-height: 280px;
+                                background-image: url(&quot;assets/img/quem-ajudamos/agricultura.jpg&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        ></div>
+                        <div class="body">
+                            <h3>Agricultores Familiares</h3>
+                            <p>Agrofloresta regenerativa e segurança alimentar.</p>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @media (max-width: 920px) {
+                        div[style*="grid-template-columns: repeat(2, 1fr)"] {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                </style>
+            </div>
+        </section>
+        <style>
+            [data-carousel-dots] button {
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                border: none;
+                background: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+                padding: 0;
+            }
+            [data-carousel-dots] button.active {
+                background: #fff;
+                width: 24px;
+                border-radius: 6px;
+            }
+        </style>
+        <!-- VÍDEO INSTITUCIONAL -->
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Vídeo institucional</div>
+                    <h2>Um minuto para entender nosso movimento</h2>
+                    <p>
+                        Temos dezenas de vídeos e depoimentos em nosso canal do YouTube — inclua aqui o vídeo
+                        institucional mais recente.
+                    </p>
+                </div>
+                <div
+                    style="
+                        max-width: 820px;
+                        margin: 0 auto;
+                        border-radius: var(--radius-lg);
+                        overflow: hidden;
+                        box-shadow: var(--shadow-lg);
+                        aspect-ratio: 16/9;
+                        background: linear-gradient(135deg, #0b2545, #123765);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    "
+                >
+                    <a
+                        href="https://www.youtube.com/channel/UC7i_6IJPcqcxha_-yZf_cvQ"
+                        target="_blank"
+                        rel="noopener"
+                        style="
+                            width: 84px;
+                            height: 84px;
+                            border-radius: 50%;
+                            background: var(--orange);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+                        "
+                    >
+                        <span
+                            style="
+                                width: 0;
+                                height: 0;
+                                border-top: 14px solid transparent;
+                                border-bottom: 14px solid transparent;
+                                border-left: 22px solid #fff;
+                                margin-left: 6px;
+                            "
+                        ></span>
+                    </a>
+                </div>
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 16px">
+                    <!-- ATUALIZAR: incorporar (embed) o vídeo institucional final via &lt;iframe&gt; do YouTube quando definido -->
+                    Assista a todos os nossos vídeos no
+                    <a
+                        href="https://www.youtube.com/channel/UC7i_6IJPcqcxha_-yZf_cvQ"
+                        target="_blank"
+                        rel="noopener"
+                        style="color: var(--orange-600); font-weight: 700"
+                        >canal oficial do YouTube</a
+                    >.
+                </p>
+            </div>
+        </section>
+        <!-- HISTÓRIAS REAIS -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Histórias reais</div>
+                    <h2>Vidas transformadas, na prática</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="testi-card">
+                        <p>
+                            "Hoje tenho renda própria graças ao Curió Look. Aprendi um ofício e recuperei minha
+                            autoestima."
+                        </p>
+                        <div class="testi-name">Depoimento do projeto Curió Look Lab</div>
+                        <div class="testi-role">Costureira parceira do Instituto</div>
+                    </div>
+                    <div class="testi-card">
+                        <p>
+                            "Consegui fazer a cirurgia que esperava há anos através do Saúde para Todos. Hoje vivo sem
+                            dor."
+                        </p>
+                        <div class="testi-name">Depoimento do projeto Saúde para Todos</div>
+                        <div class="testi-role">Paciente atendido pelo Instituto</div>
+                    </div>
+                    <div class="testi-card">
+                        <p>
+                            "O curso me abriu portas que eu nem sabia que existiam. Hoje penso em trabalhar com
+                            tecnologia."
+                        </p>
+                        <div class="testi-name">Depoimento do projeto Potência Feminina</div>
+                        <div class="testi-role">Aluna capacitada em programação</div>
+                    </div>
+                </div>
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 24px">
+                    <!-- ATUALIZAR: substituir pelos depoimentos completos (nome, foto e vídeo) do arquivo do projeto Saúde para Todos -->
+                    Temos muitos depoimentos reais em vídeo — substitua estes textos pelos relatos completos do arquivo
+                    do Instituto.
+                </p>
+            </div>
+        </section>
+        <!-- PARCEIROS -->
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Quem confia no nosso trabalho</div>
+                    <h2>Parceiros e apoiadores</h2>
+                </div>
+                <div class="partners-strip">
+                    <span class="partner-pill">Google.org</span>
+                    <span class="partner-pill">Rede Mulher Empreendedora</span> <span class="partner-pill">Itaú</span>
+                    <span class="partner-pill">Santander</span> <span class="partner-pill">Bradesco</span>
+                    <span class="partner-pill">Instituto BEI</span>
+                    <span class="partner-pill">Governo do Estado de SP</span>
+                    <span class="partner-pill">Mercado Pago</span>
+                </div>
+                <p style="text-align: center; margin-top: 24px">
+                    <a href="parceiros.html" class="pillar-link">Ver todos os parceiros <span class="arrow">→</span></a>
+                </p>
+            </div>
+        </section>
+        <!-- BLOG PREVIEW -->
+        <section class="bg-light">
+            <div class="container">
+                <div
+                    class="section-head left"
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        flex-wrap: wrap;
+                        gap: 16px;
+                    "
+                >
+                    <div>
+                        <div class="eyebrow">Portal de notícias</div>
+                        <h2 style="margin-bottom: 0">Últimas do nosso blog</h2>
+                    </div>
+                    <a href="blog.html" class="btn btn-outline-navy btn-sm">Ver todo o blog</a>
+                </div>
+                <div class="card-grid">
+                    <a href="blog-cop30.html" class="project-card">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #0b2545, #2e9e6d)">
+                            <span class="ph-tag"> ESG</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Notícias · COP30</span>
+                            <h3>O que a COP30 significa para as ONGs brasileiras</h3>
+                            <p>
+                                Financiamento climático, novas regras e oportunidades para organizações sociais como o
+                                Instituto Themis Furigo.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="blog-realidade-virtual-educacao.html" class="project-card">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #123765, #7a4fdb)">
+                            <span class="ph-tag"> IA</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Tecnologia</span>
+                            <h3>O impacto da realidade virtual na educação profissional</h3>
+                            <p>Como óculos de RV estão sendo usados para capacitar jovens em nossos cursos.</p>
+                        </div>
+                    </a>
+                    <a href="blog-moda-sustentavel.html" class="project-card">
+                        <div class="photo-frame" style="--ph-bg: linear-gradient(135deg, #d94e1f, #0b2545)">
+                            <span class="ph-tag"> Moda Sustentável</span>
+                        </div>
+                        <div class="body">
+                            <span class="tag">Mulheres</span>
+                            <h3>Moda sustentável gera renda para mulheres</h3>
+                            <p>Como o Curió Look Lab transforma retalhos e tempo ocioso em autonomia financeira.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA FINAL -->
+        <section>
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Faça parte dessa transformação.</h2>
+                        <p>Sua doação, parceria ou trabalho voluntário chega direto na vida de quem mais precisa.</p>
+                    </div>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap">
+                        <a href="como-ajudar.html" class="btn btn-orange"> Como Ajudar</a>
+                        <a href="contato.html" class="btn btn-outline">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "footer.html" %}
+        <script src="assets/js/main.js"></script>
+        <script></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/* Main CSS - Importa todos os módulos em ordem */
+
+/* 1. Variáveis e design system */
+@import "variables.css";
+
+/* 2. Reset e estilos base */
+@import "reset.css";
+
+/* 3. Layout base */
+@import "layout.css";
+
+/* 4. Componentes */
+@import "components/buttons.css";
+@import "components/header.css";
+@import "components/hero.css";
+@import "components/cards.css";
+@import "components/footer.css";
+@import "components/utilities.css";

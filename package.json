@@ -1,0 +1,19 @@
+{
+  "name": "themis-elev",
+  "version": "1.0.0",
+  "description": "Site novo do Instituto Themis Furigo, redesenhado com base em benchmarking de grandes ONGs nacionais e internacionais (Charity: Water, Save the Children, World Vision, Gerando Falcões, Instituto Ayrton Senna, entre outras), unindo os quatro pilares do Instituto — **saúde, empreendedorismo feminino, agricultura familiar e tecnologia/IA** — em uma única identidade.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "watch": "eleventy --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+  }
+}
