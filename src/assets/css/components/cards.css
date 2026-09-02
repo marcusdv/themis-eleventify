@@ -172,7 +172,7 @@
 
 .project-card .photo-frame {
     border-radius: 0;
-    min-height: 180px;
+    min-height: 250px;
 }
 
 .project-card .photo-frame::before {
