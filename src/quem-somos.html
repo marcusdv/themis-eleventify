@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="index.html">Início</a> / Quem Somos</div>
+                <div class="breadcrumb"><a href="/">Início</a> / Quem Somos</div>
                 <h1>Um hub de transformação social</h1>
                 <p>
                     O Instituto Themis Furigo é uma Organização da Sociedade Civil (OSC) independente, privada e sem
@@ -59,42 +59,17 @@
                         empreendedorismo feminino e tecnologia de ponta em um único movimento.
                     </p>
                 </div>
-                <div class="photo-frame" style="min-height: 380px; --ph-bg: linear-gradient(135deg, #0b2545, #f2622e)">
-                    <span class="ph-tag">Nossa equipe</span>
-                    <div class="ph-label"><!-- ATUALIZAR: substituir por foto real da fundadora/equipe --></div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-light">
-            <div class="container">
-                <div class="section-head">
-                    <div class="eyebrow">Missão, visão e valores</div>
-                    <h2>O que nos move</h2>
-                </div>
-                <div class="card-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon" style="font-size: 26px"></div>
-                        <h3>Missão</h3>
-                        <p>
-                            Transformar vidas, oferecendo capacitação profissional e fortalecendo mulheres, crianças e
-                            jovens em situação de vulnerabilidade social.
-                        </p>
+                <div class="photo-frame" style="min-height: 380px; position: relative; overflow: hidden">
+                    <div style="display: flex; height: 100%; position: relative">
+                        <img src="/assets/img/quem-somos/apresentacao.jpg" alt="Apresentação" style="width: 100%; height: 100%; object-fit: cover; display: block" />
+                        <img src="/assets/img/quem-somos/criancas.jpg" alt="Crianças" style="width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; opacity: 0; transition: opacity 0.6s ease-in-out" data-slide="1" />
+                        <img src="/assets/img/quem-somos/foto-em-grupo.jpg" alt="Foto em Grupo" style="width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; opacity: 0; transition: opacity 0.6s ease-in-out" data-slide="2" />
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon" style="font-size: 26px"></div>
-                        <h3>Visão</h3>
-                        <p>
-                            Construir um mundo mais justo e igualitário, em que todas as pessoas — independente de
-                            origem ou condição — tenham a chance real de prosperar.
-                        </p>
-                    </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon" style="font-size: 26px"></div>
-                        <h3>Valores</h3>
-                        <p>
-                            Transparência, empatia, inclusão social, sustentabilidade, protagonismo feminino e inovação
-                            a serviço da transformação social.
-                        </p>
+                    <span class="ph-tag">Nossa história</span>
+                    <div style="position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10">
+                        <button style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.7); border: none; cursor: pointer; transition: all 0.3s" data-btn="0" onclick="currentSlide(0)" class="carousel-btn active"></button>
+                        <button style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); border: none; cursor: pointer; transition: all 0.3s" data-btn="1" onclick="currentSlide(1)" class="carousel-btn"></button>
+                        <button style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); border: none; cursor: pointer; transition: all 0.3s" data-btn="2" onclick="currentSlide(2)" class="carousel-btn"></button>
                     </div>
                 </div>
             </div>
@@ -323,13 +298,47 @@
                             Publicamos estatuto, relatórios e selos de reconhecimento na nossa página de transparência.
                         </p>
                     </div>
-                    <a href="transparencia.html" class="btn btn-navy">Ver Transparência</a>
+                    <a href="/transparencia/" class="btn btn-navy">Ver Transparência</a>
                 </div>
             </div>
         </section>
         {% include "footer.html" %}
         <script src="assets/js/main.js"></script>
         <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('[data-slide]');
+        const buttons = document.querySelectorAll('.carousel-btn');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.style.opacity = '0');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            if (slides[index]) {
+                slides[index].style.opacity = '1';
+            }
+            if (buttons[index]) {
+                buttons[index].classList.add('active');
+                buttons[index].style.background = 'rgba(255,255,255,0.9)';
+            }
+
+            buttons.forEach((btn, i) => {
+                if (i !== index) {
+                    btn.style.background = 'rgba(255,255,255,0.5)';
+                }
+            });
+        }
+
+        function currentSlide(index) {
+            currentIndex = index;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % (slides.length + 1);
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 5000);
         </script>
     </body>
 </html>

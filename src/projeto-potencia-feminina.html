@@ -30,7 +30,7 @@
         <section class="page-hero">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html">Início</a> / <a href="projetos.html">Projetos</a> / Potência Feminina
+                    <a href="/">Início</a> / <a href="/projetos/">Projetos</a> / Potência Feminina
                 </div>
                 <h1>Potência Feminina</h1>
                 <p>
@@ -70,13 +70,254 @@
                         </div>
                     </div>
                 </div>
-                <div class="photo-frame" style="min-height: 380px; --ph-bg: linear-gradient(135deg, #0b2545, #f2622e)">
-                    <span class="ph-tag">Potência Feminina</span>
-                    <div class="ph-label"><!-- ATUALIZAR: substituir por foto/vídeo real de formandas --></div>
+                <div style="min-height: 380px; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-md)">
+                    <iframe
+                        width="100%"
+                        height="380"
+                        src="https://www.youtube.com/embed/sQShcebw3hc"
+                        title="YouTube Potência Feminina"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
                 </div>
             </div>
         </section>
         <section class="bg-light">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px">
+                    <!-- Instagram 1 - Marcia -->
+                    <a
+                        href="https://www.instagram.com/reels/DENO8WOsKJs/"
+                        target="_blank"
+                        rel="noopener"
+                        style="text-decoration: none; display: block"
+                    >
+                        <div
+                            style="
+                                border-radius: 16px;
+                                overflow: hidden;
+                                box-shadow: var(--shadow-md);
+                                transition:
+                                    transform 0.2s,
+                                    box-shadow 0.2s;
+                                cursor: pointer;
+                                position: relative;
+                                aspect-ratio: 1;
+                            "
+                            onmouseover="
+                                this.style.transform = 'translateY(-4px)';
+                                this.style.boxShadow = 'var(--shadow-lg)';
+                                this.querySelector('[data-play]').style.transform = 'scale(1.1)';
+                            "
+                            onmouseout="
+                                this.style.transform = 'translateY(0)';
+                                this.style.boxShadow = 'var(--shadow-md)';
+                                this.querySelector('[data-play]').style.transform = 'scale(1)';
+                            "
+                        >
+                            <img
+                                src="/assets/img/mulheres-potencia/marcia.jpg"
+                                alt="Marcia - Potência Feminina"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block"
+                            />
+                            <div
+                                style="
+                                    position: absolute;
+                                    inset: 0;
+                                    background: rgba(0, 0, 0, 0.2);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    data-play
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        background: rgba(255, 255, 255, 0.9);
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                                        transition: transform 0.3s;
+                                    "
+                                >
+                                    <svg
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 24 24"
+                                        fill="#f2622e"
+                                        style="margin-left: 2px"
+                                    >
+                                        <polygon points="5 3 19 12 5 21" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Instagram 2 - Bolos -->
+                    <a
+                        href="https://www.instagram.com/reels/DC61oAgud1_/"
+                        target="_blank"
+                        rel="noopener"
+                        style="text-decoration: none; display: block"
+                    >
+                        <div
+                            style="
+                                border-radius: 16px;
+                                overflow: hidden;
+                                box-shadow: var(--shadow-md);
+                                transition:
+                                    transform 0.2s,
+                                    box-shadow 0.2s;
+                                cursor: pointer;
+                                position: relative;
+                                aspect-ratio: 1;
+                            "
+                            onmouseover="
+                                this.style.transform = 'translateY(-4px)';
+                                this.style.boxShadow = 'var(--shadow-lg)';
+                                this.querySelector('[data-play]').style.transform = 'scale(1.1)';
+                            "
+                            onmouseout="
+                                this.style.transform = 'translateY(0)';
+                                this.style.boxShadow = 'var(--shadow-md)';
+                                this.querySelector('[data-play]').style.transform = 'scale(1)';
+                            "
+                        >
+                            <img
+                                src="/assets/img/mulheres-potencia/bolos.jpg"
+                                alt="Bolos - Potência Feminina"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block"
+                            />
+                            <div
+                                style="
+                                    position: absolute;
+                                    inset: 0;
+                                    background: rgba(0, 0, 0, 0.2);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    data-play
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        background: rgba(255, 255, 255, 0.9);
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                                        transition: transform 0.3s;
+                                    "
+                                >
+                                    <svg
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 24 24"
+                                        fill="#f2622e"
+                                        style="margin-left: 2px"
+                                    >
+                                        <polygon points="5 3 19 12 5 21" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Instagram 3 - Historias -->
+                    <a
+                        href="https://www.instagram.com/reels/DBwM1WRPt5B/"
+                        target="_blank"
+                        rel="noopener"
+                        style="text-decoration: none; display: block"
+                    >
+                        <div
+                            style="
+                                border-radius: 16px;
+                                overflow: hidden;
+                                box-shadow: var(--shadow-md);
+                                transition:
+                                    transform 0.2s,
+                                    box-shadow 0.2s;
+                                cursor: pointer;
+                                position: relative;
+                                aspect-ratio: 1;
+                            "
+                            onmouseover="
+                                this.querySelector('[data-overlay]').style.opacity = '1';
+                                this.style.transform = 'translateY(-4px)';
+                                this.style.boxShadow = 'var(--shadow-lg)';
+                            "
+                            onmouseout="
+                                this.querySelector('[data-overlay]').style.opacity = '0';
+                                this.style.transform = 'translateY(0)';
+                                this.style.boxShadow = 'var(--shadow-md)';
+                            "
+                        >
+                            <img
+                                src="/assets/img/mulheres-potencia/historias.jpg"
+                                alt="Historias - Potência Feminina"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block"
+                            />
+                            <div
+                                data-overlay
+                                style="
+                                    position: absolute;
+                                    inset: 0;
+                                    background: rgba(0, 0, 0, 0.2);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    opacity: 1;
+                                    transition: all 0.3s;
+                                "
+                            >
+                                <div
+                                    class="play-button"
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        background: rgba(255, 255, 255, 0.9);
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                                        transition: all 0.3s;
+                                        transform: scale(1);
+                                    "
+                                >
+                                    <svg
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 24 24"
+                                        fill="#f2622e"
+                                        style="margin-left: 2px"
+                                    >
+                                        <polygon points="5 3 19 12 5 21" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <style>
+                    @media (max-width: 920px) {
+                        div[style*="grid-template-columns: repeat(3, 1fr)"] {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                </style>
+            </div>
+        </section>
+        <section>
             <div class="container">
                 <div class="section-head">
                     <div class="eyebrow">Como funciona</div>
@@ -129,8 +370,8 @@
                         <p>Sua doação ou parceria financia bolsas, materiais e mentorias do programa.</p>
                     </div>
                     <div style="display: flex; gap: 12px; flex-wrap: wrap">
-                        <a href="como-ajudar.html" class="btn btn-orange"> Como ajudar este projeto</a>
-                        <a href="empresas.html" class="btn btn-outline">Seja Parceiro</a>
+                        <a href="/como-ajudar/" class="btn btn-orange"> Como ajudar este projeto</a>
+                        <a href="/empresas/" class="btn btn-outline">Seja Parceiro</a>
                     </div>
                 </div>
             </div>
