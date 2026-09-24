@@ -209,6 +209,47 @@
     color: var(--orange-600);
 }
 
+/* Pix urgent box */
+
+.pix-box {
+    background: linear-gradient(135deg, var(--orange-050), var(--white));
+    border: 2px solid var(--orange);
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+}
+
+.pix-box strong {
+    color: var(--orange-600);
+    font-size: 1.15rem;
+}
+
+.pix-box .pix-key {
+    background: var(--white);
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .pix-box .btn-orange {
+        animation: pix-pulse 1.8s ease-in-out infinite;
+    }
+}
+
+@keyframes pix-pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(242, 98, 46, 0.45);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(242, 98, 46, 0);
+    }
+}
+
 /* CTA band */
 
 .cta-band {
