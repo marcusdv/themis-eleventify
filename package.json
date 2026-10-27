@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
+    "build:staging": "eleventy --pathprefix=/statico/",
     "dev": "eleventy --serve",
     "watch": "eleventy --watch"
   },

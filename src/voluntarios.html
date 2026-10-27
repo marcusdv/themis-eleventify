@@ -10,14 +10,14 @@
             name="description"
             content="Ofereça seu tempo e talento para transformar vidas junto ao Instituto Themis Furigo."
         />
-        <link rel="icon" href="/assets/img/logo-light.png" />
+        <link rel="icon" href="{{ '/assets/img/logo-light.png' | url }}" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
         <meta property="og:title" content="Seja Voluntário | Instituto Themis Furigo" />
         <meta
             property="og:description"
@@ -60,7 +60,7 @@
                     >
                 </div>
                 <div class="photo-frame" style="min-height: 340px; position: relative; overflow: hidden">
-                    <img src="/assets/img/voluntario.jpg" alt="Voluntariado" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1" />
+                    <img src="{{ '/assets/img/voluntario.jpg' | url }}" alt="Voluntariado" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1" />
                     <span class="ph-tag" style="position: relative; z-index: 2">Voluntariado</span>
                 </div>
             </div>
@@ -154,7 +154,7 @@
             </div>
         </section>
         {% include "footer.html" %}
-        <script src="assets/js/main.js"></script>
+        <script src="{{ '/assets/js/main.js' | url }}"></script>
         <script>
         </script>
     </body>

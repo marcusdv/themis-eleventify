@@ -58,10 +58,27 @@ _output/            → Site compilado (gerado automaticamente)
 ## 🛠️ Comandos
 
 ```bash
-npm run build      # Gera site pronto para produção em _output/
-npm run dev        # Inicia servidor + watch
-npm run watch      # Apenas watch (sem servidor)
+npm run build          # Gera site para produção em _output/ (raiz do domínio — ex: Vercel)
+npm run build:staging  # Gera site para o ambiente de staging, hospedado em /statico/
+npm run dev             # Inicia servidor + watch
+npm run watch           # Apenas watch (sem servidor)
 ```
+
+### Por que existe o `build:staging`?
+
+O site usa caminhos absolutos para os assets (CSS, JS, imagens, vídeos), como `/assets/css/style.css`. Isso funciona perfeitamente quando o site está hospedado **na raiz do domínio** — é o caso da Vercel (`npm run build` normal).
+
+Só que o ambiente de staging (`http://staging.institutotf.ong.br/statico/`) hospeda o site **dentro de uma subpasta** (`/statico/`), não na raiz do domínio. Nessa situação, um caminho absoluto como `/assets/css/style.css` aponta para a raiz do domínio inteiro (`staging.institutotf.ong.br/assets/...`), que não existe — e o CSS/JS/imagens somem, mesmo com o HTML carregando normalmente.
+
+O `build:staging` resolve isso usando o recurso nativo do Eleventy chamado **pathPrefix** (`eleventy --pathprefix=/statico/`). Todos os caminhos de assets no código-fonte usam o filtro `url` do Eleventy (ex: `{{ '/assets/css/style.css' | url }}`), que automaticamente prefixa `/statico/` na frente de cada caminho quando esse comando é usado — sem precisar editar nada manualmente.
+
+**Resumo:**
+| Destino | Comando | Caminho gerado |
+|---|---|---|
+| Vercel (raiz do domínio) | `npm run build` | `/assets/css/style.css` |
+| Staging via FileZilla/FTP (`/statico/`) | `npm run build:staging` | `/statico/assets/css/style.css` |
+
+⚠️ Os dois comandos escrevem no **mesmo** `_output/`. Rode o comando certo logo antes de fazer o upload/deploy correspondente — não misture os dois sem rebuildar.
 
 ---
 
@@ -105,21 +122,24 @@ Pronto! ✅
 
 ---
 
-## 📤 Deploy para LocalWeb
+## 📤 Deploy
 
-### 1. Gerar site final
+### Vercel (produção, raiz do domínio)
+A Vercel builda o projeto automaticamente a partir do repositório — ela já roda `npm run build` sozinha. Nenhuma ação manual necessária.
+
+### Staging via FileZilla/FTP (`staging.institutotf.ong.br/statico/`)
+
+### 1. Gerar site para staging
 ```bash
-npm run build
+npm run build:staging
 ```
+Use **esse** comando (não o `npm run build` normal) — veja o porquê em [🛠️ Comandos](#-comandos).
 
 ### 2. Upload
-Envie toda a pasta `_output/` para LocalWeb via:
-- FTP
-- SSH/SCP
-- Painel de controle da hospedagem
+Envie todo o conteúdo da pasta `_output/` (não a pasta em si, o conteúdo dela) para dentro de `/statico/` no servidor, via FileZilla.
 
 ### 3. Pronto!
-Seu site está online com todas as otimizações de Eleventy
+O site estará disponível em `http://staging.institutotf.ong.br/statico/`, com CSS, JS, imagens e vídeos carregando corretamente.
 
 ---
 

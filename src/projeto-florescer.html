@@ -10,14 +10,14 @@
             name="description"
             content="Atendimento terapêutico e psicológico para promover o bem-estar emocional de crianças e famílias em vulnerabilidade."
         />
-        <link rel="icon" href="/assets/img/logo-light.png" />
+        <link rel="icon" href="{{ '/assets/img/logo-light.png' | url }}" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
         <meta property="og:title" content="Florescer | Instituto Themis Furigo" />
         <meta
             property="og:description"
@@ -45,7 +45,7 @@
                     style="height: 380px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md)"
                 >
                     <img loading="lazy" decoding="async"
-                        src="/assets/img/quem-somos/criancas.jpg"
+                        src="{{ '/assets/img/quem-somos/criancas.jpg' | url }}"
                         alt="Crianças participando de atividade do Instituto Themis Furigo"
                         style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"
                     />
@@ -101,7 +101,7 @@
             </div>
         </section>
         {% include "footer.html" %}
-        <script src="assets/js/main.js"></script>
+        <script src="{{ '/assets/js/main.js' | url }}"></script>
         <script>
         </script>
     </body>

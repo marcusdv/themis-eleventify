@@ -21,7 +21,7 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
         <meta property="og:title" content="Educação do Futuro: IA e Realidade Virtual | Instituto Themis Furigo" />
         <meta
             property="og:description"
@@ -88,7 +88,7 @@
                 </div>
                 <div style="height: 380px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md)">
                     <img loading="lazy" decoding="async"
-                        src="/assets/img/blog/relidade-virtual.jpg"
+                        src="{{ '/assets/img/blog/relidade-virtual.jpg' | url }}"
                         alt="Jovem utilizando óculos de Realidade Virtual"
                         style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"
                     />
@@ -123,6 +123,6 @@
             </div>
         </section>
         {% include "footer.html" %}
-        <script src="assets/js/main.js"></script>
+        <script src="{{ '/assets/js/main.js' | url }}"></script>
     </body>
 </html>
