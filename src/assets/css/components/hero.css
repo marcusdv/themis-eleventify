@@ -61,6 +61,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .hero-logo {
+        order: -1;
+    }
+}
+
 .hero-content h1 {
     color: var(--white);
     font-size: clamp(2.1rem, 4.6vw, 3.4rem);
