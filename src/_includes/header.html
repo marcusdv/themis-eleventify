@@ -1,6 +1,6 @@
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="brand">
+        <a href="{{ '/' | url }}" class="brand">
             <img
                 class="brand-mark"
                 src="{{ '/assets/img/logo-navy.png' | url }}"
@@ -17,10 +17,10 @@
             <li class="nav-item" data-nav="quem-somos">
                 <button type="button">Quem Somos <span class="caret"></span></button>
                 <div class="dropdown">
-                    <a href="/quem-somos/">Nosso valores</a>
-                    <a href="/membros/">Membros</a>
-                    <a href="/transparencia/">Transparência</a>
-                    <a href="/contato/">Contato</a>
+                    <a href="{{ '/quem-somos/' | url }}">Nosso valores</a>
+                    <a href="{{ '/membros/' | url }}">Membros</a>
+                    <a href="{{ '/transparencia/' | url }}">Transparência</a>
+                    <a href="{{ '/contato/' | url }}">Contato</a>
                 </div>
             </li>
             <li class="nav-item" data-nav="projetos">
@@ -38,14 +38,14 @@
                     >
                         Projetos Atuais
                     </div>
-                    <a href="/projeto-saude-para-todos/"><span></span> Saúde</a>
-                    <a href="/projeto-potencia-feminina/"><span></span> Mulheres</a>
-                    <a href="/projeto-florescer/"><span></span> Crianças &amp; Família</a>
-                    <a href="/projeto-agrofloresta-viva/"><span></span> Agricultura Familiar</a>
-                    <a href="/projeto-curio-look-lab/"><span></span> Moda Sustentável</a>
-                    <a href="/projeto-tecnologia-ia/"><span></span> Tecnologia e IA</a>
+                    <a href="{{ '/projeto-saude-para-todos/' | url }}"><span></span> Saúde</a>
+                    <a href="{{ '/projeto-potencia-feminina/' | url }}"><span></span> Mulheres</a>
+                    <a href="{{ '/projeto-florescer/' | url }}"><span></span> Crianças &amp; Família</a>
+                    <a href="{{ '/projeto-agrofloresta-viva/' | url }}"><span></span> Agricultura Familiar</a>
+                    <a href="{{ '/projeto-curio-look-lab/' | url }}"><span></span> Moda Sustentável</a>
+                    <a href="{{ '/projeto-tecnologia-ia/' | url }}"><span></span> Tecnologia e IA</a>
                     <a
-                        href="/projetos/"
+                        href="{{ '/projetos/' | url }}"
                         style="
                             border-top: 1px solid var(--border);
                             margin-top: 6px;
@@ -68,21 +68,21 @@
                     >
                         Arquivo
                     </div>
-                    <a href="/historico/">Histórico de projetos</a>
+                    <a href="{{ '/historico/' | url }}">Histórico de projetos</a>
                 </div>
             </li>
             <li class="nav-item" data-nav="participe">
                 <button type="button">Participe <span class="caret"></span></button>
                 <div class="dropdown">
-                    <a href="/como-ajudar/"> Como Ajudar</a> <a href="/voluntarios/"> Seja Voluntário</a>
-                    <a href="/empresas/"> Sou Empresa</a> <a href="/parceiros/"> Nossos Parceiros</a>
+                    <a href="{{ '/como-ajudar/' | url }}"> Como Ajudar</a> <a href="{{ '/voluntarios/' | url }}"> Seja Voluntário</a>
+                    <a href="{{ '/empresas/' | url }}"> Sou Empresa</a> <a href="{{ '/parceiros/' | url }}"> Nossos Parceiros</a>
                 </div>
             </li>
-            <li class="nav-item" data-nav="blog"><a href="/blog/">Blog</a></li>
+            <li class="nav-item" data-nav="blog"><a href="{{ '/blog/' | url }}">Blog</a></li>
         </ul>
         <div class="header-cta">
-            <a href="/voluntarios/" class="btn btn-outline-navy btn-sm"> Seja Voluntário</a>
-            <a href="/como-ajudar/" class="btn btn-orange btn-sm"> Como Ajudar</a>
+            <a href="{{ '/voluntarios/' | url }}" class="btn btn-outline-navy btn-sm"> Seja Voluntário</a>
+            <a href="{{ '/como-ajudar/' | url }}" class="btn btn-orange btn-sm"> Como Ajudar</a>
             <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
         </div>
     </div>

@@ -29,7 +29,7 @@
         {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Parceiros</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Parceiros</div>
                 <h1>Nossos Parceiros</h1>
                 <p>
                     Empresas, institutos e órgãos públicos que já apoiaram ou apoiam os projetos do Instituto Themis
@@ -130,7 +130,7 @@
                         <h2>Sua empresa pode ser a próxima parceira</h2>
                         <p>Conheça as formas de apoiar o Instituto Themis Furigo.</p>
                     </div>
-                    <a href="/empresas/" class="btn btn-orange">Ver página para Empresas</a>
+                    <a href="{{ '/empresas/' | url }}" class="btn btn-orange">Ver página para Empresas</a>
                 </div>
             </div>
         </section>

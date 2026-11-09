@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Empresas</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Empresas</div>
                 <h1>Para Empresas</h1>
                 <p>
                     Construa com o Instituto Themis Furigo um projeto de ESG com impacto real, mensurável e alinhado aos
@@ -155,7 +155,7 @@
                         <h2>Vamos conversar sobre uma parceria?</h2>
                         <p>Conte-nos os objetivos da sua empresa e construímos juntos um projeto sob medida.</p>
                     </div>
-                    <a href="/contato/" class="btn btn-orange">Falar com o Instituto</a>
+                    <a href="{{ '/contato/' | url }}" class="btn btn-orange">Falar com o Instituto</a>
                 </div>
             </div>
         </section>

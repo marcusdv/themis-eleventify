@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Blog</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Blog</div>
                 <h1>Portal de Notícias</h1>
                 <p>
                     Histórias reais, bastidores dos projetos e conteúdo útil sobre saúde, mulheres, agricultura
@@ -51,7 +51,7 @@
                     <button data-filter="transparencia">Transparência</button>
                 </div>
                 <div class="card-grid">
-                    <a href="/blog-cop30/" class="project-card blog-card" data-category="noticias">
+                    <a href="{{ '/blog-cop30/' | url }}" class="project-card blog-card" data-category="noticias">
                         <div class="photo-frame" style="background-image: url('/assets/img/blog/cop30.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> ESG</span>
                         </div>
@@ -65,7 +65,7 @@
                         </div>
                     </a>
                     <a
-                        href="/blog-realidade-virtual-educacao/"
+                        href="{{ '/blog-realidade-virtual-educacao/' | url }}"
                         class="project-card blog-card"
                         data-category="tecnologia"
                     >
@@ -81,7 +81,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="/blog-moda-sustentavel/" class="project-card blog-card" data-category="moda">
+                    <a href="{{ '/blog-moda-sustentavel/' | url }}" class="project-card blog-card" data-category="moda">
                         <div class="photo-frame" style="background-image: url('/assets/img/blog/moda.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Moda Sustentável</span>
                         </div>
@@ -91,7 +91,7 @@
                             <p>Como o Curió Look Lab transforma retalhos e tempo ocioso em autonomia financeira.</p>
                         </div>
                     </a>
-                    <a href="/blog-imposto-de-renda/" class="project-card blog-card" data-category="editais">
+                    <a href="{{ '/blog-imposto-de-renda/' | url }}" class="project-card blog-card" data-category="editais">
                         <div class="photo-frame" style="background-image: url('/assets/img/blog/imposto.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Editais</span>
                         </div>

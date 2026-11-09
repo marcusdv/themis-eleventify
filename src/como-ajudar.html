@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Como Ajudar</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Como Ajudar</div>
                 <h1>Como Ajudar</h1>
                 <p>
                     Há muitas formas de fazer parte da transformação que o Instituto Themis Furigo promove. Escolha a
@@ -54,7 +54,7 @@
                             Ofereça seu tempo e talento em projetos de saúde, educação, tecnologia, agricultura familiar
                             e moda sustentável.
                         </p>
-                        <a href="/voluntarios/" class="pillar-link"
+                        <a href="{{ '/voluntarios/' | url }}" class="pillar-link"
                             >Ver oportunidades <span class="arrow">→</span></a
                         >
                     </div>
@@ -66,7 +66,7 @@
                         </div>
                         <h3>Sua empresa como parceira</h3>
                         <p>Patrocínio, ESG, projetos personalizados e leis de incentivo fiscal para empresas.</p>
-                        <a href="/empresas/" class="pillar-link">Saiba mais <span class="arrow">→</span></a>
+                        <a href="{{ '/empresas/' | url }}" class="pillar-link">Saiba mais <span class="arrow">→</span></a>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">
@@ -92,7 +92,7 @@
                         </div>
                         <h3>Divulgue nosso trabalho</h3>
                         <p>Siga e compartilhe nossas redes sociais. Ajudar a contar essa história também é ajudar.</p>
-                        <a href="/contato/" class="pillar-link">Nossas redes <span class="arrow">→</span></a>
+                        <a href="{{ '/contato/' | url }}" class="pillar-link">Nossas redes <span class="arrow">→</span></a>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">
@@ -105,7 +105,7 @@
                             Profissionais de saúde, tecnologia e educação podem dar aulas, mentorias e palestras para
                             nossos projetos.
                         </p>
-                        <a href="/voluntarios/" class="pillar-link">Quero contribuir <span class="arrow">→</span></a>
+                        <a href="{{ '/voluntarios/' | url }}" class="pillar-link">Quero contribuir <span class="arrow">→</span></a>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon" style="font-size: 48px; display: flex; align-items: center; justify-content: center; font-weight: bold">$</div>

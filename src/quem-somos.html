@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Quem Somos</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Quem Somos</div>
                 <h1>Um hub de transformação social</h1>
                 <p>
                     O Instituto Themis Furigo é uma Organização da Sociedade Civil (OSC) independente, privada e sem
@@ -298,7 +298,7 @@
                             Publicamos estatuto, relatórios e selos de reconhecimento na nossa página de transparência.
                         </p>
                     </div>
-                    <a href="/transparencia/" class="btn btn-navy">Ver Transparência</a>
+                    <a href="{{ '/transparencia/' | url }}" class="btn btn-navy">Ver Transparência</a>
                 </div>
             </div>
         </section>

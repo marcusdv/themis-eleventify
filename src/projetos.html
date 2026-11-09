@@ -28,7 +28,7 @@
     <body>        {% include "header.html" %}
         <section class="page-hero">
             <div class="container">
-                <div class="breadcrumb"><a href="/">Início</a> / Projetos</div>
+                <div class="breadcrumb"><a href="{{ '/' | url }}">Início</a> / Projetos</div>
                 <h1>Nossos Projetos</h1>
                 <p>
                     Seis frentes de atuação, um único propósito: transformar vidas através da saúde, do empreendedorismo
@@ -39,7 +39,7 @@
         <section>
             <div class="container">
                 <div class="card-grid">
-                    <a href="/projeto-saude-para-todos/" class="project-card">
+                    <a href="{{ '/projeto-saude-para-todos/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/saude.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Saúde</span>
                         </div>
@@ -53,7 +53,7 @@
                             <span class="pillar-link">Conhecer o projeto <span class="arrow">→</span></span>
                         </div>
                     </a>
-                    <a href="/projeto-potencia-feminina/" class="project-card">
+                    <a href="{{ '/projeto-potencia-feminina/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/mulheres.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Mulheres</span>
                         </div>
@@ -67,7 +67,7 @@
                             <span class="pillar-link">Conhecer o projeto <span class="arrow">→</span></span>
                         </div>
                     </a>
-                    <a href="/projeto-florescer/" class="project-card">
+                    <a href="{{ '/projeto-florescer/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/criancas.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Crianças</span>
                         </div>
@@ -81,7 +81,7 @@
                             <span class="pillar-link">Conhecer o projeto <span class="arrow">→</span></span>
                         </div>
                     </a>
-                    <a href="/projeto-agrofloresta-viva/" class="project-card">
+                    <a href="{{ '/projeto-agrofloresta-viva/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/agricultura.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Agricultura Familiar</span>
                         </div>
@@ -95,7 +95,7 @@
                             <span class="pillar-link">Conhecer o projeto <span class="arrow">→</span></span>
                         </div>
                     </a>
-                    <a href="/projeto-curio-look-lab/" class="project-card">
+                    <a href="{{ '/projeto-curio-look-lab/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/costura.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Moda Sustentável</span>
                         </div>
@@ -108,7 +108,7 @@
                             <span class="pillar-link">Conhecer o projeto <span class="arrow">→</span></span>
                         </div>
                     </a>
-                    <a href="/projeto-tecnologia-ia/" class="project-card">
+                    <a href="{{ '/projeto-tecnologia-ia/' | url }}" class="project-card">
                         <div class="photo-frame" style="background-image: url('/assets/pilares-images/ai.jpg'); background-size: cover; background-position: center">
                             <span class="ph-tag"> Tecnologia e IA</span>
                         </div>
@@ -122,9 +122,9 @@
                 </div>
                 <div class="notice-box" style="margin-top: 40px">
                     <strong>Quer conhecer projetos históricos?</strong> O Instituto já realizou grandes iniciativas como
-                    o <a href="/historico/" style="text-decoration: underline">Heróis Usam Máscaras</a> e o
+                    o <a href="{{ '/historico/' | url }}" style="text-decoration: underline">Heróis Usam Máscaras</a> e o
                     Hortifruti Solidário. Veja tudo em nosso
-                    <a href="/historico/" style="text-decoration: underline">Histórico de Projetos</a>.
+                    <a href="{{ '/historico/' | url }}" style="text-decoration: underline">Histórico de Projetos</a>.
                 </div>
             </div>
         </section>
@@ -137,7 +137,7 @@
                             Capacitação profissional através de Inteligência Artificial, Realidade Virtual e Metaverso, um diferencial que praticamente nenhuma outra ONG brasileira possui.
                         </p>
                     </div>
-                    <a href="/projeto-tecnologia-ia/" class="btn btn-orange">Conhecer o projeto</a>
+                    <a href="{{ '/projeto-tecnologia-ia/' | url }}" class="btn btn-orange">Conhecer o projeto</a>
                 </div>
             </div>
         </section>
